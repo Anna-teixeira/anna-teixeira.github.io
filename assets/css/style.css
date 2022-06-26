@@ -123,14 +123,15 @@ main{
     padding-left: 5rem;
 }
 
-main.works >  p {
+main#works >  h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
     color: #333333;
 }
 
-main.works  div.row {
+main#works  div.row, 
+main#ux  div.row {
     display: flex;
     width: 100%;
     margin-top: 6.6rem;
@@ -138,7 +139,8 @@ main.works  div.row {
     justify-content: space-between;
 }
 
-main.works  div.row:first-child {
+main#works  div.row:first-child,
+main#ux  div.row:first-child {
     display: flex;
     width: 100%;
     margin-top: 6.6rem;
@@ -146,7 +148,8 @@ main.works  div.row:first-child {
     justify-content: space-between;
 }
 
-main.works div.row div.item {
+main#works div.row div.item,
+main#ux div.row div.item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -154,7 +157,8 @@ main.works div.row div.item {
     max-width: 43.66rem;
 }
 
-main.works div.row div.item div:nth-child(1) {
+main#works div.row div.item div:nth-child(1),
+main#ux div.row div.item div:nth-child(1) {
     display: flex;
     width: 100%;
     height: 26.4rem;
@@ -164,7 +168,8 @@ main.works div.row div.item div:nth-child(1) {
     border-radius: 1.5rem;
 }
 
-main.works div.row div.item div:nth-child(2) {
+main#works div.row div.item div:nth-child(2),
+main#ux div.row div.item div:nth-child(2) {
     padding-left: 0.8rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
@@ -173,10 +178,14 @@ main.works div.row div.item div:nth-child(2) {
     border-left: 0.2rem solid #E9DEC6;
 }
 
-main.works div.row div.item.item-1 div:nth-child(1) {
+main#works div.row div.item.item-1 div:nth-child(1) {
     background-color: #ECEEF1;
 }
 
-main.works div.row div.item.item-2 div:nth-child(1) {
+main#works div.row div.item.item-2 div:nth-child(1) {
     background-color: #E2DDD1;
+}
+
+main#ux div.row div.item.item-1 div:nth-child(1) {
+    background-color: #7A7F55;
 }
