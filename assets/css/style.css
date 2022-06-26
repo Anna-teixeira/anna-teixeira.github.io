@@ -8,80 +8,115 @@ html{
 }
 
 header {
-    background-color: #ccc;
-}
-
-#main-structure{
     display: flex;
+    width: 100%;
+    max-height: 11.5rem;
 }
 
-#main-structure aside{
-    display: flex;
-    flex-direction: column;
-    max-width: 17rem;
-    height: 100vh;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 200;
-}
-
-#main-structure aside > div{
+header > div:nth-child(1){
     display: flex;
     text-align: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    max-height: 12rem;
+    max-width: 17.1rem;
     font-size: 4rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200;
     border-bottom: #B4CBD2 solid 0.3rem;
 }
 
-#main-structure aside > a:nth-child(2){
-    margin-top: 20rem;
+header > div:nth-child(1) > span{
+    margin: 2rem 0rem 1rem 0rem;
 }
 
-#main-structure aside > a,
-#main-structure aside > a ~ p{
-    margin-top: 2.3rem;
-    margin-left: 2.6rem;
-}
-
-#main-structure aside > a ~ p{
-    font-size: 1rem;
-    color: #606060;
-}
-
-#main-structure header {
+header > div:nth-child(2){
     display: flex;
     width: 100%;
-    max-width: 107.1rem;
-    max-height: 12.3rem;
+    max-width: 54%;
+    max-height: 10rem;
+    align-items: center;
 }
 
-#main-structure header > div{
-    width: 77%;
-}
-
-#main-structure header > div > h1{
+header > div > h1{
     font-family: 'Montserrat', sans-serif;
     color: #000000;
     font-size: 1.8rem;
     font-weight: 200;
 }
 
-#main-structure header > div ~ nav{
-    width: 20%;
+header > div ~ nav{
+    width: 100%;
+    max-width: 25%;
 }
 
-#main-structure header > div ~ nav ul{
+header > div ~ nav ul{
     display:  flex;
+    margin-top: 5rem;
     list-style: none;
     justify-content: space-between;
+    
 }
 
-#main-structure header > div ~ nav ul li a{
+header > div ~ nav ul li{
+    width: 100%;
+    max-width: 9.4rem;
+    text-align: center;
+}
+
+header > div ~ nav ul li:hover {
+    border-bottom: 0.1rem solid #80979F;
+}
+
+header > div ~ nav ul li.active{
+    border-bottom: 0.1rem solid #80979F;
+}
+
+header > div ~ nav ul li a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+header > div:nth-child(4){
+    margin-top: 1.4rem;
+    margin-left: 2rem;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #80979F;
+}
+
+header > div:nth-child(4) > span{
+    color: #CAB79D;
+}
+
+aside{
+    position: fixed;
+    top: 40rem;
+}
+
+aside > a figure,
+aside > a ~ p{
+    margin-top: 2.3rem;
+    margin-left: 2.6rem;
+}
+
+aside > a ~ p{
+    font-size: 1rem;
+    color: #606060;
+}
+
+main ~ div{
+    position: fixed;
+    bottom: 5.5rem;
+    right: 3rem;
+}
+
+main{
+    width: 100%;
+    max-width: 79%;
+    margin-left: 17.1rem;
 }
