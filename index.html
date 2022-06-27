@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,300&family=Yanone+Kaffeesatz:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
@@ -20,27 +20,27 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">ux</a></li>
-                <li><a href="">graphic</a></li>
-                <li class="active"><a href="">about</a></li>
+                <li id="uxSection" data-target="ux"><a>ux</a></li>
+                <li id="graphicSection" data-target="works"><a>graphic</a></li>
+                <li class="active" id="aboutSection" data-target="about"><a>about</a></li>
             </ul>        
         </nav>
         <div><span>PT /</span> EN</div>
     </header>
     <aside>
-        <a href="">
+        <a href="mailto:Anna.Teixeira12@gmail.com">
             <figure>
-                <img src="assets/images/email.png" alt="Mail" title="Mail">
+                <img src="images/email.png" alt="Mail" title="Mail">
             </figure>
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/anna-teixeira/">
             <figure>
-                <img src="assets/images/linkedin.png" alt="Linkedin" title="Linkedin Logo">
+                <img src="images/linkedin.png" alt="Linkedin" title="Linkedin Logo">
             </figure>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/_annateixeira/">
             <figure>
-                <img src="assets/images/instagram.png" alt="Instagram" title="Instagram Logo">
+                <img src="images/instagram.png" alt="Instagram" title="Instagram Logo">
             </figure>
         </a>
         <p>ANNA TEIXEIRA DESIGN©</p>
@@ -135,18 +135,18 @@
     <!-- <main id="works">
         <h2>Here are some examples of my work as a graphic designer</h2>
         <div class="row">
-            <div class="item item-1">
+            <div class="item item-1" id="sdg" data-target="SDG">
                 <div>
-                    <img src="assets/images/sdgs.png" alt="Sustainable Development logo">
+                    <img src="images/sdgs.png" alt="Sustainable Development logo">
                 </div>
                 <div>
                     <p>Sustainable Development Goals Campaign</p>
                     Graphic Design
                 </div>
             </div>
-            <div class="item item-2">
+            <div class="item item-2" id="cooperate" data-target="day-to-cooporate">
                 <div>
-                    <img src="assets/images/coperation-day.png" alt="Day to Cooperate Campaign logo">
+                    <img src="images/coperation-day.png" alt="Day to Cooperate Campaign logo">
                 </div>
                 <div>
                     <p>Day to Cooperate Campaign</p>
@@ -155,9 +155,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="item item-3">
+            <div class="item item-3" id="Police" data-target="police">
                 <div>
-                    <img src="assets/images/police.png" alt="Military Police Day Campaign logo">
+                    <img src="images/police.png" alt="Military Police Day Campaign logo">
                 </div>
                 <div>
                     <p>Military Police Day Campaign</p>
@@ -168,9 +168,9 @@
     </main>
     <main id="ux">
         <div class="row">
-            <div class="item item-1">
+            <div class="item item-1" id="adotevl">
                 <div>
-                    <img src="assets/images/adotevl-project.png" alt="AdoteVL logo">
+                    <img src="images/adotevl-project.png" alt="AdoteVL logo">
                 </div>
                 <div>
                     <p>Website for Adote um Vira Lata (NGO)</p>
@@ -178,8 +178,8 @@
                 </div>
             </div>
         </div>
-    </main> -->
-    <!-- <main id="SDG">
+    </main>
+    <main id="SDG">
         <h2>
             Sustainable Development Goals Campaign
         </h2>
@@ -187,9 +187,48 @@
         <div class="content">
             <div>
                 <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <div>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-1.png" alt="Sustainable Development Goals Campaign Poster 1">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-2.png" alt="Sustainable Development Goals Campaign Poster 2">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-3.png" alt="Sustainable Development Goals Campaign Poster 3">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-4.png" alt="Sustainable Development Goals Campaign Poster 4">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-5.png" alt="Sustainable Development Goals Campaign Poster 5">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-6.png" alt="Sustainable Development Goals Campaign Poster 6">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-7.png" alt="Sustainable Development Goals Campaign Poster 7">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-8.png" alt="Sustainable Development Goals Campaign Poster 8">
+                        </figure>
+                        <figure>
+                            <img src="images/sustainable-development-goals-campaign-9.png" alt="Sustainable Development Goals Campaign Poster 9">
+                        </figure>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div>
@@ -218,9 +257,28 @@
         <div class="content">
             <div>
                 <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <div>
+                        <figure>
+                            <img src="images/day-to-cooperate-campaign-1.png" alt="Day to Cooperate Campaign Poster 1">
+                        </figure>
+                        <figure>
+                            <img src="images/day-to-cooperate-campaign-2.png" alt="Day to Cooperate Campaign Poster 2">
+                        </figure>
+                        <figure>
+                            <img src="images/day-to-cooperate-campaign-3.png" alt="Day to Cooperate Campaign Poster 3">
+                        </figure>
+                        <figure>
+                            <img src="images/day-to-cooperate-campaign-4.png" alt="Day to Cooperate Campaign Poster 4">
+                        </figure>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div>
@@ -254,9 +312,20 @@
         <div class="content">
             <div>
                 <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <div>
+                        <figure>
+                            <img src="images/military-police-day-campaign-1.png" alt="Military Police Day Campaign Poster 1">
+                        </figure>
+                        <figure>
+                            <img src="images/military-police-day-campaign-2.png" alt="Military Police Day Campaign Poster 2">
+                        </figure>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="active"></li>
+                            <li></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div>
@@ -279,10 +348,11 @@
     <div>
         <a href="">
             <figure>
-                <img src="assets/images/beer.png" alt="Instagram" title="Instagram Logo">
+                <img src="images/beer.png" alt="Instagram" title="Instagram Logo">
             </figure>
         </a>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
