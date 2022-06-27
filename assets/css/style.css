@@ -211,20 +211,74 @@ main#SDG > div.content{
     margin: 2.5rem 0;
 }
 
-main#SDG > div.content > div:nth-child(1){
+main#SDG > div.content > div:nth-child(1),
+main#police > div.content > div:nth-child(1),
+main#day-to-cooporate > div.content > div:nth-child(1){
     width: 100%;
-    height: 50rem; 
+    height: 50rem;
     max-width: 30.5rem;
     margin-right: 13.7rem;
-    overflow: hidden;
-    background-color: red;
+    box-shadow: 1rem 1rem 1.5rem #707070;
 }
 
-main#SDG > div.content > div:nth-child(1) > div{
+main#SDG > div.content > div:nth-child(1) > div,
+main#police > div.content > div:nth-child(1) > div,
+main#day-to-cooporate > div.content > div:nth-child(1) > div{
+    overflow: hidden;
+}
+
+main#SDG > div.content > div:nth-child(1) > div > div:nth-child(1){
     display: flex;
-    width: 300%;
-    height: 100%;
+    width: 900%;
+    height: 50rem;
     background-color: purple;
+}
+
+main#SDG > div.content > div:nth-child(1) > div div:nth-child(1) figure,
+main#SDG > div.content > div:nth-child(1) > div div:nth-child(1) figure > img,
+main#police > div.content > div:nth-child(1) > div div:nth-child(1) figure,
+main#police > div.content > div:nth-child(1) > div div:nth-child(1) figure > img,
+main#day-to-cooporate > div.content > div:nth-child(1) > div div:nth-child(1) figure,
+main#day-to-cooporate > div.content > div:nth-child(1) > div div:nth-child(1) figure > img{
+    width: 100%;
+    height: 100%;
+}
+
+main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2),
+main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2),
+main#police > div.content > div:nth-child(1) > div > div:nth-child(2){
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2) > ul{
+    display: flex;
+    width: 100%;
+    max-width: 17rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    list-style: none;
+}
+
+main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li,
+main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li,
+main#police > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 2rem;
+    background-color: #60606080;
+    cursor: pointer;
+}
+
+main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li.active,
+main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li.active,
+main#police > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li.active{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 2rem;
+    background-color: #606060;
 }
 
 main#SDG > div.content > div:nth-child(2){
@@ -282,20 +336,20 @@ main#day-to-cooporate > div.content{
     margin: 2.5rem 0;
 }
 
-main#day-to-cooporate > div.content > div:nth-child(1){
-    width: 100%;
-    height: 50rem; 
-    max-width: 30.5rem;
-    margin-right: 13.7rem;
-    overflow: hidden;
-    background-color: red;
+main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(1){
+    display: flex;
+    width: 400%;
+    height: 50rem;
+    background-color: purple;
 }
 
-main#day-to-cooporate > div.content > div:nth-child(1) > div{
+main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) > ul{
     display: flex;
-    width: 300%;
-    height: 100%;
-    background-color: purple;
+    width: 100%;
+    max-width: 7rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    list-style: none;
 }
 
 main#day-to-cooporate > div.content > div:nth-child(2){
@@ -353,22 +407,21 @@ main#police > div.content{
     margin: 2.5rem 0;
 }
 
-main#police > div.content > div:nth-child(1){
-    width: 100%;
-    height: 50rem; 
-    max-width: 30.5rem;
-    margin-right: 13.7rem;
-    overflow: hidden;
-    background-color: red;
-}
-
-main#police > div.content > div:nth-child(1) > div{
+main#police > div.content > div:nth-child(1) > div div:nth-child(1){
     display: flex;
-    width: 300%;
-    height: 100%;
+    width: 200%;
+    height: 50rem; 
     background-color: purple;
 }
 
+main#police > div.content > div:nth-child(1) > div > div:nth-child(2) > ul{
+    display: flex;
+    width: 100%;
+    max-width: 3rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    list-style: none;
+}
 
 main#police > div.content > div:nth-child(2){
     max-width: 52.6rem;
