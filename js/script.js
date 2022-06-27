@@ -21,6 +21,7 @@ $(document).ready(function() {
         current = $("#graphicSection").attr('data-target')
         $("#"+current).css('display', 'block');
     })
+    
     $("#aboutSection").on('click', function(){
         $("#"+current).css('display', 'none');
 
