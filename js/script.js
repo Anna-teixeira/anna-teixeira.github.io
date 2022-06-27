@@ -21,7 +21,7 @@ $(document).ready(function() {
         current = $("#graphicSection").attr('data-target')
         $("#"+current).css('display', 'block');
     })
-    
+
     $("#aboutSection").on('click', function(){
         $("#"+current).css('display', 'none');
 
@@ -54,5 +54,13 @@ $(document).ready(function() {
     $("#adotevl").on('click', function(){
         //window.open('https://www.google.com.br', '_blank');
         alert('website under development')
+    })
+
+    $(".slide-item").on('click', function(){
+        let value = $(this).attr('data-target');
+        $(this).parent().parent().parent().children('.slide').css('margin-left', '-'+value+'%')
+        $(this).siblings().removeClass('active')
+        $(this).addClass('active')
+
     })
 });
