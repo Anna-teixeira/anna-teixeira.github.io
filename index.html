@@ -20,25 +20,25 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">ux</a></li>
-                <li><a href="">graphic</a></li>
-                <li class="active"><a href="">about</a></li>
+                <li id="uxSection" data-target="ux"><a>ux</a></li>
+                <li id="graphicSection" data-target="works"><a>graphic</a></li>
+                <li class="active" id="aboutSection" data-target="about"><a>about</a></li>
             </ul>        
         </nav>
         <div><span>PT /</span> EN</div>
     </header>
     <aside>
-        <a href="">
+        <a href="mailto:Anna.Teixeira12@gmail.com">
             <figure>
                 <img src="assets/images/email.png" alt="Mail" title="Mail">
             </figure>
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/anna-teixeira/">
             <figure>
                 <img src="assets/images/linkedin.png" alt="Linkedin" title="Linkedin Logo">
             </figure>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/_annateixeira/">
             <figure>
                 <img src="assets/images/instagram.png" alt="Instagram" title="Instagram Logo">
             </figure>
@@ -84,10 +84,10 @@
             </figure>
         </div>
     </main>
-    <!-- <main id="works">
+    <main id="works">
         <h2>Here are some examples of my work as a graphic designer</h2>
         <div class="row">
-            <div class="item item-1">
+            <div class="item item-1" id="sdg" data-target="SDG">
                 <div>
                     <img src="assets/images/sdgs.png" alt="Sustainable Development logo">
                 </div>
@@ -96,7 +96,7 @@
                     Graphic Design
                 </div>
             </div>
-            <div class="item item-2">
+            <div class="item item-2" id="cooperate" data-target="day-to-cooporate">
                 <div>
                     <img src="assets/images/coperation-day.png" alt="Day to Cooperate Campaign logo">
                 </div>
@@ -107,7 +107,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="item item-3">
+            <div class="item item-3" id="Police" data-target="police">
                 <div>
                     <img src="assets/images/police.png" alt="Military Police Day Campaign logo">
                 </div>
@@ -120,7 +120,7 @@
     </main>
     <main id="ux">
         <div class="row">
-            <div class="item item-1">
+            <div class="item item-1" id="adotevl">
                 <div>
                     <img src="assets/images/adotevl-project.png" alt="AdoteVL logo">
                 </div>
@@ -130,8 +130,8 @@
                 </div>
             </div>
         </div>
-    </main> -->
-    <!-- <main id="SDG">
+    </main>
+    <main id="SDG">
         <h2>
             Sustainable Development Goals Campaign
         </h2>
@@ -296,7 +296,7 @@
                 </div>
             </div>
         </div>
-    </main> -->
+    </main>
     <div>
         <a href="">
             <figure>
@@ -304,6 +304,7 @@
             </figure>
         </a>
     </div>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

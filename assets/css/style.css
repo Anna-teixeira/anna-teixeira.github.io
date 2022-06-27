@@ -63,6 +63,7 @@ header > div ~ nav ul li{
     width: 100%;
     max-width: 9.4rem;
     text-align: center;
+    cursor: pointer;
 }
 
 header > div ~ nav ul li:hover {
@@ -130,6 +131,14 @@ main#works >  h2 {
     color: #333333;
 }
 
+main#works,
+main#ux,
+main#SDG,
+main#police,
+main#day-to-cooporate{
+    display: none;
+}
+
 main#works  div.row, 
 main#ux  div.row {
     display: flex;
@@ -155,6 +164,7 @@ main#ux div.row div.item {
     width: 100%;
     height: 26.4rem;
     max-width: 43.66rem;
+    cursor: pointer;
 }
 
 main#works div.row div.item div:nth-child(1),
