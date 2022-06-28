@@ -108,7 +108,9 @@ aside > a ~ p{
 }
 
 aside > a ~ p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1rem;
+    font-weight: 100;
     color: #606060;
 }
 
