@@ -633,12 +633,15 @@ main#police > div.content > div:nth-child(2) > div > em ~ p{
     main#day-to-cooporate > div.content {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 5rem;
     }
 
     main#SDG > div.content > div:nth-child(1),
     main#police > div.content > div:nth-child(1),
     main#day-to-cooporate > div.content > div:nth-child(1) {
         margin-bottom: 10rem;
+        max-width: 24rem;
+        margin-left: 13rem;
     }
 }
 
@@ -867,8 +870,8 @@ main#police > div.content > div:nth-child(2) > div > em ~ p{
 
 @media only screen and (max-width: 480px) {
     header > div:nth-child(1) {
-        max-width: 9.1rem;
-        font-size: 3rem;
+        max-width: 6.1rem;
+        font-size: 2.2rem;
     }
 
     header > div:nth-child(2) {
@@ -876,27 +879,42 @@ main#police > div.content > div:nth-child(2) > div > em ~ p{
         padding-left: 1rem;
     }
 
+    header > div:nth-child(4){
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
     header > div > h1 {
         font-size: 1.2rem;
     }
 
     header > div ~ nav ul {
-        margin-top: 4.5rem;
-        width: 19rem;
+        margin-top: 3.5rem;
+        width: 18rem;
         margin-left: 1rem;
     }
 
     aside {
-        max-width: 10rem;
+        max-width: 8rem;
+    }
+
+    aside > a figure, aside > a ~ p {
+        margin-top: 2.3rem;
+        margin-left: 1rem;
     }
 
     main {
-        margin-left: 5.1rem;
+        margin-left: 3.1rem;
     }
 
     main ~ div {
         bottom: 23.5rem;
-        left: 2rem;
+        left: 0.8rem;
+    }
+
+    main ~ div img{
+        width: 100%;
+        max-width: 4rem;
     }
 
     main#about > div:nth-child(1) > div:nth-child(1) > h2 {
