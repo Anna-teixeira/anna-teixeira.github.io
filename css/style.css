@@ -23,7 +23,7 @@ header > div:nth-child(1){
     max-width: 17.1rem;
     font-size: 4rem;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     border-bottom: #B4CBD2 solid 0.3rem;
 }
 
@@ -381,7 +381,6 @@ main#SDG > div.content > div:nth-child(1) > div > div:nth-child(1){
     display: flex;
     width: 900%;
     height: 50rem;
-    background-color: purple;
 }
 
 main#SDG > div.content > div:nth-child(1) > div div:nth-child(1) figure,
@@ -490,7 +489,6 @@ main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(1){
     display: flex;
     width: 400%;
     height: 50rem;
-    background-color: purple;
 }
 
 main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) > ul{
@@ -561,7 +559,6 @@ main#police > div.content > div:nth-child(1) > div div:nth-child(1){
     display: flex;
     width: 200%;
     height: 50rem; 
-    background-color: purple;
 }
 
 main#police > div.content > div:nth-child(1) > div > div:nth-child(2) > ul{
