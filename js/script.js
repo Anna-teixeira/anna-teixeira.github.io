@@ -56,11 +56,26 @@ $(document).ready(function() {
         alert('website under development')
     })
 
+    let config = false
     $(".slide-item").on('click', function(){
         let value = $(this).attr('data-target');
-        $(this).parent().parent().parent().children('.slide').css('margin-left', '-'+value+'%')
+        let exist = value.includes(':');
+        if (exist) {
+            value = value.split(':')
+            $(this).parent().parent().parent().children('.slide').css('margin-left', '-'+value[0]+'%')
+            $(this).parent().parent().parent().parent().css('max-width', value[1]+'rem').css('height', value[2]+'rem')
+            $(this).parent().parent().parent().children('.slide').css('height', value[2]+'rem')
+            config = true;
+        }else{
+            if (config){
+                $(this).parent().parent().parent().parent().css('max-width', '24rem').css('height', '50rem')
+                $(this).parent().parent().parent().children('.slide').css('height', '50rem')
+                config = false
+            }
+            $(this).parent().parent().parent().children('.slide').css('margin-left', '-'+value+'%')
+        }
+
         $(this).siblings().removeClass('active')
         $(this).addClass('active')
-
     })
 });
