@@ -1,4 +1,41 @@
 $(document).ready(function() {
+
+    var el = document.getElementById("text");
+
+    function showtext(el, text) {
+        var char = text.split("").reverse();
+    
+
+        var typer = setInterval(function() {
+        
+            if (!char.length) {
+                return clearInterval(typer)
+            }
+            
+            var next = char.pop();
+            el.innerHTML += next;
+            
+        }, 500);
+    
+    }
+
+    var aux = 0;
+    var words = ['design','experiences', 'animals', 'ux/ui', 'travel', 'web design', 'user experience', 'events']
+    var typer = setInterval(function() {
+        if (!words.length) {
+            return clearInterval(typer)
+        }
+        
+        if(aux >= 8)
+            aux = 0
+        var text = words[aux];
+        el.innerHTML = ''; 
+        showtext(el, text);
+        aux++;
+        
+    }, 8500);
+
+
     current = 'about';
     $("#uxSection").on('click', function(){
         $("#"+current).css('display', 'none');

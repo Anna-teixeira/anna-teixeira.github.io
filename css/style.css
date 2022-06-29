@@ -164,6 +164,7 @@ main#about > div:nth-child(1) > div:nth-child(1) > h3{
     color: #707070;
     display: flex;
     margin-bottom: 3.2rem;
+    flex-wrap: wrap;
 }
 
 main#about > div:nth-child(1) > div:nth-child(1) h3 > span{
