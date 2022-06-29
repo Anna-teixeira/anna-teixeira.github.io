@@ -15,7 +15,7 @@ $(document).ready(function() {
             var next = char.pop();
             el.innerHTML += next;
             
-        }, 500);
+        }, 100);
     
     }
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
         showtext(el, text);
         aux++;
         
-    }, 8500);
+    }, 2150);
 
 
     current = 'about';
