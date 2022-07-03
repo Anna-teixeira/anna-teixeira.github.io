@@ -64,18 +64,63 @@ header > div ~ nav ul{
 }
 
 header > div ~ nav ul li{
+    display: inline-block;
     width: 100%;
     max-width: 9.4rem;
     text-align: center;
     cursor: pointer;
 }
 
-header > div ~ nav ul li:hover {
-    border-bottom: 0.1rem solid #80979F;
+header > div ~ nav ul li::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 1px;
+    margin: 0 auto;
+    background: #80979F;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
+header > div ~ nav ul li:hover::after {
+    width: 100%;
+  }
 
 header > div ~ nav ul li.active{
     border-bottom: 0.1rem solid #80979F;
+}
+.rotateInDownRight {
+    -webkit-animation-name: rotateInDownRight;
+    animation-name: rotateInDownRight;
+  }
+
+  @keyframes rotateInDownRight {
+    from {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: rotate3d(0, 0, 1, 45deg);
+      transform: rotate3d(0, 0, 1, 45deg);
+      opacity: 0;
+    }
+  
+    to {
+      -webkit-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-transform: none;
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+  .rotateInDownRight {
+    -webkit-animation-name: rotateInDownRight;
+    animation-name: rotateInDownRight;
+  }
+header > div ~ nav ul li.active:hover::after {
+    width: 0%;
 }
 
 header > div ~ nav ul li a{
@@ -113,6 +158,11 @@ aside > a ~ p{
 aside > a figure img{
     width: 100%;
     max-width: 3.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+aside > a figure img:hover{
+    max-width: 4.2rem;
 }
 
 aside > a ~ p{
