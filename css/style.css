@@ -425,7 +425,7 @@ main#SDG > div.content{
 
 main#SDG > div.content > div:nth-child(1),
 main#police > div.content > div:nth-child(1),
-main#day-to-cooporate > div.content > div:nth-child(1){
+main#day-to-cooporate > div.content > div:nth-child(1) > div{
     width: 100%;
     height: 50rem;
     max-width: 30.5rem;
@@ -433,9 +433,14 @@ main#day-to-cooporate > div.content > div:nth-child(1){
     box-shadow: 1rem 1rem 1.5rem #707070;
 }
 
+main#day-to-cooporate > div.content > div{
+    width: 31rem;
+    height: 50rem;
+}
+
 main#SDG > div.content > div:nth-child(1) > div,
 main#police > div.content > div:nth-child(1) > div,
-main#day-to-cooporate > div.content > div:nth-child(1) > div{
+main#day-to-cooporate > div.content > div:nth-child(1) > div > div{
     overflow: hidden;
 }
 
@@ -449,14 +454,14 @@ main#SDG > div.content > div:nth-child(1) > div div:nth-child(1) figure,
 main#SDG > div.content > div:nth-child(1) > div div:nth-child(1) figure > img,
 main#police > div.content > div:nth-child(1) > div div:nth-child(1) figure,
 main#police > div.content > div:nth-child(1) > div div:nth-child(1) figure > img,
-main#day-to-cooporate > div.content > div:nth-child(1) > div div:nth-child(1) figure,
-main#day-to-cooporate > div.content > div:nth-child(1) > div div:nth-child(1) figure > img{
+main#day-to-cooporate > div.content > div > div:nth-child(1) > div div:nth-child(1) figure,
+main#day-to-cooporate > div.content > div > div:nth-child(1) > div div:nth-child(1) figure > img{
     width: 100%;
     height: 100%;
 }
 
 main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2),
-main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2),
+main#day-to-cooporate > div.content > div > div:nth-child(1) > div > div:nth-child(2),
 main#police > div.content > div:nth-child(1) > div > div:nth-child(2){
     display: flex;
     width: 100%;
@@ -474,7 +479,7 @@ main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2) > ul{
 }
 
 main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li,
-main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li,
+main#day-to-cooporate > div.content > div > div:nth-child(1) > div > div:nth-child(2) > ul li,
 main#police > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li{
     width: 1.2rem;
     height: 1.2rem;
@@ -484,7 +489,7 @@ main#police > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li{
 }
 
 main#SDG > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li.active,
-main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li.active,
+main#day-to-cooporate > div.content > div > div:nth-child(1) > div > div:nth-child(2) > ul li.active,
 main#police > div.content > div:nth-child(1) > div > div:nth-child(2) > ul li.active{
     width: 1.2rem;
     height: 1.2rem;
@@ -545,15 +550,15 @@ main#day-to-cooporate > div.content{
     display: flex;
     width: 100%;
     margin: 2.5rem 0;
-}
+} 
 
-main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(1){
+main#day-to-cooporate > div.content > div > div:nth-child(1) > div > div:nth-child(1){
     display: flex;
     width: 400%;
     height: 50rem;
 }
 
-main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) > ul{
+main#day-to-cooporate > div.content > div > div:nth-child(1) > div > div:nth-child(2) > ul{
     display: flex;
     width: 100%;
     max-width: 7rem;
@@ -563,7 +568,9 @@ main#day-to-cooporate > div.content > div:nth-child(1) > div > div:nth-child(2) 
 }
 
 main#day-to-cooporate > div.content > div:nth-child(2){
+    width: 100%;
     max-width: 52.6rem;
+    margin-left: 11.2rem;
 }
 
 main#day-to-cooporate > div.content > div:nth-child(2) > div {
