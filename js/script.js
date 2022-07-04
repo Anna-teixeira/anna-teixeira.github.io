@@ -114,16 +114,16 @@ $(document).ready(function() {
         if (exist) {
             value = value.split(':')
             $(this).parent().parent().parent().children('.slide').css('margin-left', '-'+value[0]+'%')
-            $(this).parent().parent().parent().parent().css('max-width', value[1]+'rem').css('height', value[2]+'rem')
-            $(this).parent().parent().parent().children('.slide').css('height', value[2]+'rem')
+            $(this).parent().parent().parent().parent().css('max-width', value[1]+'rem').css('height', value[2]+'rem').css({transition : 'all 1s ease-in-out'});
+            $(this).parent().parent().parent().children('.slide').css('height', value[2]+'rem').css({transition : 'all 1s ease-in-out'});
             config = true;
         }else{
             if (config){
-                $(this).parent().parent().parent().parent().css('max-width', '24rem').css('height', '50rem')
-                $(this).parent().parent().parent().children('.slide').css('height', '50rem')
+                $(this).parent().parent().parent().parent().css('max-width', '24rem').css('height', '50rem').css({transition : 'all 1s ease-in-out'});
+                $(this).parent().parent().parent().children('.slide').css('height', '50rem').css({transition : 'all 1s ease-in-out'});
                 config = false
             }
-            $(this).parent().parent().parent().children('.slide').css('margin-left', '-'+value+'%')
+            $(this).parent().parent().parent().children('.slide').css('margin-left', '-'+value+'%').css({transition : 'all 1s ease-in-out'});
         }
 
         $(this).siblings().removeClass('active')
