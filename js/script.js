@@ -15,7 +15,7 @@ $(document).ready(function() {
                         element =  el.innerHTML+' '+' '+' '+' '+' '+' '+' '+' '+' '+' '
                         first = false;
                     }else{
-                        element =el.innerHTML;
+                        element = el.innerHTML;
                     }
                     let txt =  element.split("");
                     txt.pop();
